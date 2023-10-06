@@ -1,17 +1,17 @@
-# Task 1.1: 
+#task 1.1 
 def task_1_1():
     numbs = [4, 8, 15, 16, 23, 42]
     for num in numbs:
         print(num, end=" ")
     print()
 
-# Task 1.2: 
+#task 1.2 
 def task_1_2():
     numbs = [4, 8, 15, 16, 23, 42]
     for num in numbs:
         print(f"{num}")
 
-# Task 1.3: 
+#task 1.3 
 def task_1_3():
     try:
         user_input = int(input('three consecutive numbers: '))
@@ -21,7 +21,7 @@ def task_1_3():
     except:
         print("Invalid input.")
 
-# Task 1.4: 
+#task 1.4 
 def task_1_4():
     try:
         a = int(input('three integers: '))
@@ -32,7 +32,7 @@ def task_1_4():
     except:
         print("Invalid input.")
 
-# Task 1.5:
+#task 1.5
 def task_1_5():
     try:
         edge = int(input('volume of a cube and the area of its full surface: '))
@@ -44,7 +44,7 @@ def task_1_5():
         print("Invalid input.")
 
 
-# Task 2.1:
+#task 2.1
 def task_2_1():
     try:
         n = int(input('children: '))
@@ -54,7 +54,7 @@ def task_2_1():
     except:
         print("Invalid input.")
 
-# Task 2.2: 
+#task 2.2 
 def task_2_2():
     try:
         number = int(input('four-digit number: '))
@@ -65,7 +65,7 @@ def task_2_2():
     except:
         print("Invalid input.")
 
-# Task 2.3:
+#task 2.3
 def task_2_3():
     try:
         population = int(input('population: '))
@@ -74,7 +74,7 @@ def task_2_3():
     except:
         print("Invalid input.")
 
-# Task 2.4: 
+#task 2.4 
 def task_2_4():
     try:
         number = int(input('number<<: '))
@@ -83,7 +83,7 @@ def task_2_4():
     except:
         print("Invalid input.")
 
-# Task 2.5: 
+#task 2.5 
 def task_2_5():
     try:
         num1 = float(input('number: '))
