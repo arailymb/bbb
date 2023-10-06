@@ -1,93 +1,94 @@
-# Task 1.1: Print sequence with spaces
+# Task 1.1: 
 def task_1_1():
-    sequence = [4, 8, 15, 16, 23, 42]
-    print(f"{sequence[0]} {sequence[1]} {sequence[2]} {sequence[3]} {sequence[4]} {sequence[5]}")
+    numbs = [4, 8, 15, 16, 23, 42]
+    for num in numbs:
+        print(num, end=" ")
+    print()
 
-# Task 1.2: Print sequence on separate lines
+# Task 1.2: 
 def task_1_2():
-    sequence = [4, 8, 15, 16, 23, 42]
-    for num in sequence:
+    numbs = [4, 8, 15, 16, 23, 42]
+    for num in numbs:
         print(f"{num}")
 
-# Task 1.3: User input and next two numbers
+# Task 1.3: 
 def task_1_3():
     try:
-        user_input = int(input("Please enter the first number: "))
+        user_input = int(input('three consecutive numbers: '))
         print(f"{user_input}")
         print(f"{user_input + 1}")
         print(f"{user_input + 2}")
     except:
-        print("Invalid input. Please enter a number.")
+        print("Invalid input.")
 
-# Task 1.4: Input three numbers and print their sum
+# Task 1.4: 
 def task_1_4():
     try:
-        a = int(input("Enter the first number: "))
-        b = int(input("Enter the second number: "))
-        c = int(input("Enter the third number: "))
+        a = int(input('three integers: '))
+        b = int(input())
+        c = int(input())
         result = a + b + c
         print(f"{result}")
     except:
-        print("Invalid input. Please enter numbers only.")
+        print("Invalid input.")
 
-# Task 1.5: Compute cube's volume and surface area
+# Task 1.5:
 def task_1_5():
     try:
-        edge = int(input("Enter the edge length of the cube: "))
+        edge = int(input('volume of a cube and the area of its full surface: '))
         volume = edge ** 3
         surface_area = 6 * edge ** 2
         print(f"Volume = {volume}")
         print(f"Total surface area = {surface_area}")
     except:
-        print("Invalid input. Please enter a valid edge length.")
+        print("Invalid input.")
 
-# ... (Task 1 functions remain as above)
 
-# Task 2.1: Divide tangerines among schoolchildren
+# Task 2.1:
 def task_2_1():
     try:
-        n = int(input("Enter the number of schoolchildren: "))
-        k = int(input("Enter the number of tangerines: "))
-        print(k // n)  # tangerines each student gets
-        print(k % n)  # tangerines remaining
+        n = int(input('children: '))
+        k = int(input('tangerines: '))
+        print(k // n) 
+        print(k % n)  
     except:
-        print("Invalid input. Please enter valid numbers.")
+        print("Invalid input.")
 
-# Task 2.2: Extract digits from a four-digit number
+# Task 2.2: 
 def task_2_2():
     try:
-        number = int(input("Enter a four-digit number: "))
+        number = int(input('four-digit number: '))
         print(f"The digit in the thousands position is {number // 1000}")
         print(f"The number in the hundreds position is {(number % 1000) // 100}")
         print(f"The digit in the tens position is {(number % 100) // 10}")
         print(f"The digit in the position of units is {number % 10}")
     except:
-        print("Invalid input. Please enter a four-digit number.")
+        print("Invalid input.")
 
-# Task 2.3: Calculate survivors after Thanos's snap
+# Task 2.3:
 def task_2_3():
     try:
-        population = int(input("Enter the population of the universe: "))
+        population = int(input('population: '))
         survivors = (population + 1) // 2
         print(survivors)
     except:
-        print("Invalid input. Please enter a number.")
+        print("Invalid input.")
 
-# Task 2.4: Perform "<<" operation on an input number
+# Task 2.4: 
 def task_2_4():
     try:
-        number = int(input("Enter a number: "))
+        number = int(input('number<<: '))
         result = number << 1
         print(f"The result of << is {result}")
     except:
-        print("Invalid input. Please enter a number.")
+        print("Invalid input.")
 
-# Task 2.5: Basic calculator using "if" statements
+# Task 2.5: 
 def task_2_5():
     try:
-        num1 = float(input("Please enter the first number: "))
-        num2 = float(input("Please enter the second number: "))
-        operation = input("Please choose the operation (+, -, *, /): ")
+        num1 = float(input('number: '))
+        num2 = float(input('number: '))
+        operation = input("choose the operation (+, -, *, /): ")
 
         if operation == "+":
             print(num1 + num2)
@@ -101,11 +102,10 @@ def task_2_5():
             else:
                 print("Cannot divide by zero.")
         else:
-            print("Invalid operation. Choose +, -, *, or /.")
+            print("Invalid operation.")
     except:
-        print("Invalid input. Please ensure numbers are entered correctly.")
+        print("Invalid input.")
 
-# Run each task
 task_1_1()
 task_1_2()
 task_1_3()
